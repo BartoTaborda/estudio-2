@@ -335,6 +335,9 @@ header .menu-bar-logo .slideMenu a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.containerPortada .imgPortada {
+  width: 100%;
+}
 .nuestroEstudio {
   background: #fff;
   padding: 2.625rem 0;
