@@ -72,15 +72,16 @@ input, select, textarea {
 
 //COLORES
 @color-portada: #072440;
-@fondo-secundario: #6dbcee;
+@fondo-secundario: #4d7ac3;
 @blanco: #fff;
 @texto-oscuro: #011339;
 @texto-claro: rgb(105, 194, 246);
 @gris-claro: #eaeaea;
 
 //FUENTES
-@fuentes-principal: 'Playfair Display', serif;
-@fuente-secundaria: 'Poppins', sans-serif;
+@fuente-principal: 'Playfair Display', serif;
+@fuente-secundaria: 'Bebas Neue', cursive;
+@fuente-logo: 'Tangerine', cursive;
 
 
 // ----------------------- GENERALES ----------------------
@@ -95,7 +96,7 @@ input, select, textarea {
 
 body{
     font-size: 16px;
-    font-family: @fuentes-principal;
+    font-family: @fuente-principal;
     color: @texto-oscuro;
 };
 
@@ -143,19 +144,6 @@ h2::selection{
     background: #2352b8b5;
 }
 
-.subrayado::after{
-    content: "-";
-    display: block;
-    position: absolute;
-    border-top: 5px solid @color-portada;
-    width: 150px;
-    height: 2px;
-    right: calc(25% - 150px);
-    text-align: center;
-    justify-content:center ;
-
-}
-
 // ---------------------- BOTON WTSP ----------------------
 
 .float{
@@ -185,6 +173,7 @@ h2::selection{
 // ----------------------- ENCABEZADO ----------------------
 
 header{
+
     .menu-bar-pc{
         background: @color-portada;
         width: 100%;
@@ -195,11 +184,24 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // border-bottom: 1px solid @gris-claro;
 
         .logo{
             position: relative;
-            width: 15rem;
+            width: 20rem;
+            padding: 0.75rem 0;
+            .logo-menu-bar-pc{
+                color: #fff;
+                font-family: @fuente-logo;
+                font-size: 3.2rem;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                text-shadow: 5px 5px 5px black;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
         }
 
         .menu-principal{
@@ -207,23 +209,24 @@ header{
             display: inline-block;
             right: 0px;
             a{
-                padding: 0 0.5625rem;
-                color: @texto-claro;
+                padding: 0 1.5rem;
+                font-size: 1.3rem;
+                color: #fff;
+                font-family: @fuente-secundaria;
                 -webkit-transition: all .3s ease;
                 -o-transition: all .3s ease;
                 transition: all .3s ease;
                 text-transform: uppercase;
                 
                 &:hover{
-                    color: @blanco;
-                    text-decoration: underline;
+                    text-shadow: 0px 0px 10px #fff;
                 }
             }
         }
     }
 
     .menu-bar-logo{
-        background: @fondo-secundario;
+        background: @color-portada;
         width: 100%;
         position: fixed;
         z-index: 99;
@@ -236,18 +239,33 @@ header{
         min-height: 3.5rem;
 
         .logo{
-            max-width: 15rem;
+            max-width: 25rem;
+            .logo-menu-bar{
+                text-align: left;
+                color: #fff;
+                font-family: @fuente-logo;
+                font-size: 2.5rem;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                text-shadow: 5px 5px 5px black;
+                
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
         }
 
         .estudio-menu{
             cursor: pointer;
             font-size: 2.1875rem;
+            color: #fff;
             -webkit-transition: all .3s ease;
             -o-transition: all .3s ease;
             transition: all .3s ease;
             &:hover{
-                color: @blanco;
                 transform: scale(1.05);
+                text-shadow: 0px 0px 5px #fff;
             }
         }
 
@@ -330,8 +348,10 @@ header{
                     color: @texto-oscuro;
                     text-align: center;
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     font-weight: 700;
+                    font-family: @fuente-secundaria;
+                    text-decoration: underline;
                 }
                 p{
                     color: #000000;
@@ -384,8 +404,10 @@ header{
         h2{
             color: @texto-oscuro;
             text-transform: uppercase;
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
+            font-family: @fuente-secundaria;
+            text-decoration: underline;
         }
         p{
             color: #000000;
@@ -467,10 +489,12 @@ header{
                 top: 2rem;
                 h2{
                     color: @texto-oscuro;
-                    padding-left: 1.5rem;
+                    padding-left: 2rem;
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     font-weight: 700;
+                    font-family: @fuente-secundaria;
+                    text-decoration: underline;
                 }
                 p{
                     color: @blanco;
@@ -480,7 +504,7 @@ header{
                     padding-left: 5rem;
                     font-size: 1.125rem;
                     line-height: 1.75;
-                    font-weight: 600;
+                    font-weight: 500;
                     background-color: @fondo-secundario;
                 }
                 .sobreNuestroEquipo{
@@ -521,7 +545,7 @@ header{
 
 .containerMensaje{
     background: @blanco;
-    padding: 2.625rem 0;
+    padding: 1.5rem 0;
 
     .container{
         display: flex;
@@ -553,8 +577,10 @@ header{
                     padding-bottom: 1.5rem;
                     text-align: right;
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     font-weight: 700;
+                    font-family: @fuente-secundaria;
+                    text-decoration: underline;
                 }
                 .formulario{
                     position: relative;
@@ -573,7 +599,7 @@ header{
                             input[type="text"],
                             input[type="email"],
                             textarea{
-                                font-family: @fuente-secundaria;
+                                font-family: @fuente-principal;
                                 font-size: 1rem;
                                 color: @texto-oscuro;
                                 width: 100%;
@@ -597,14 +623,15 @@ header{
                             }
         
                             label{
-                                color: @texto-claro;
-                                font-family: @fuente-secundaria;
+                                color: @fondo-secundario;
+                                font-family: @fuente-principal;
+                                font-weight: 700;
         
                                 &.label{
                                     position: absolute;
                                     top: 1rem;
                                     left: 0;
-                                    font-size: 1rem;
+                                    font-size: 1.2rem;
                                     line-height: 1rem;
                                     margin-left: 1rem;
                                     -webkit-transition: all .3s ease;
@@ -625,7 +652,7 @@ header{
                             .error{
                                 position: absolute;
                                 color: rgb(169, 76, 76);
-                                font-family: @fuente-secundaria;
+                                font-family: @fuente-principal;
                                 font-weight: 700;
                                 font-size: 0.875rem;
                             }
@@ -634,6 +661,7 @@ header{
                         input[type="submit"]{
                             font-family: @fuente-secundaria;
                             color: @blanco;
+                            font-size: 1.25rem;
                             background: darken(@fondo-secundario, 35%);
                             border-radius: 1px;
                             border: 2px solid @blanco;
@@ -642,7 +670,7 @@ header{
                             margin: 0 auto;
                             margin-top: 2rem;
                             padding: 0.9375rem;
-                            width: 20%;
+                            width: 30%;
                             outline: none;
                             -webkit-transition: all .3s ease;
                             -o-transition: all .3s ease;
@@ -685,21 +713,15 @@ header{
     width: 100%;
     position: relative;
     justify-content: center;
-    
-    .containerMapa{
-        width: 100%;
-        position: relative;
-        .fondoMapa{
-            width: 100%;
-            filter: grayscale(40%);
-        }
-    }
+    background-image: url(../img/img-mapa-prubea.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 0;
 
     .containerContacto{
-        width: 30rem;
-        top: 6rem;
-        left: calc(50% - calc(30rem / 2));
-        position: absolute;
+        width: 35rem;
+        position: relative;
         margin: 0 auto;
         background: rgb(255, 255, 255);
         border: #777 2px solid;
@@ -709,10 +731,17 @@ header{
 
         h2{
             text-align: center;
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 700;
             padding-bottom: 1rem;
             text-transform: uppercase;
+            font-family: @fuente-secundaria;
+            text-decoration: underline;
+        }
+        li{
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-bottom: 0.75rem;
         }
         
     }
@@ -723,35 +752,30 @@ header{
 .clientes{
     width: 100%;
     position: relative;
+    background-image: url(../img/otra-im-prubea.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .containerComentarios{
-        width: 100%;
-        .fondoComentarios{
-            width: 100%;
-            max-height: 19rem;
-            min-height: 19rem;
-            filter: grayscale(100%);
-        }
-    }
-
-    .containerComentario{
-        position: absolute;
-        top: 2rem;
+        position: relative;
         color: #fff;
         font-weight: 900;
         background-color: #011339bd;
-        padding: 2.25rem 0;
-        min-height: 15rem;
-        max-height: 15rem;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
 
         h2{
             font-size: 4rem;
             text-align: center;
+            padding-bottom: 1rem;
         }
         p{
             font-size: 1.5rem;
             text-align: center;
             padding: 0 10rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
         }
     }
 }
@@ -792,20 +816,7 @@ footer{
 
 // ---------------------- MEDIA QUERIES ----------------------
 
-@media all and (max-width:1000px){
-    .contacto{
-
-        .containerContacto{
-        top: 3rem;
-        }
-
-        .containerMapa{
-            max-height: 278px;
-        }
-    }
-}
-
-@media all and (max-width:906px){
+@media all and (max-width:1047px){
     header{
         .menu-bar-pc{
             display: none;
@@ -821,12 +832,13 @@ footer{
     }
 }
 
-@media all and (max-width:600px){
+@media all and (max-width:750px){
     .containerPortada{
         display: none;
     }
     .nuestroEstudio{
-        padding-top: 0px;
+        padding: 3rem 1rem;
+        padding-bottom: 1rem;
 
         .container .col{
             width: 100%;
@@ -834,6 +846,10 @@ footer{
             .titulo-seccion{
                 padding: 2rem;
             }
+        }
+        .container .col.izq{
+            order: 2;
+
         }
     }
 
@@ -850,15 +866,13 @@ footer{
         }
     }
 
+    .nuestroEstudio .container .col .titulo-seccion p{
+        text-align: justify;
+    }
+
     .servicios{
         .tituloServicios{
-            padding-top: 1.5rem;
-            h2{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 1.2rem;
-            }
+            padding-top: 2rem;
         }
         .fueros{
             .fuero{
@@ -874,6 +888,11 @@ footer{
             padding-bottom: 0;
             margin-top: 1rem;
             .container{
+
+                .col.izq{
+                    order: 2;
+                }
+
                 .col{
                     width: 100%;
                     max-width: 100%;
@@ -884,7 +903,8 @@ footer{
                     .titulo-seccion{
                         left: 0;
                         top: 0;
-                        padding: 1rem;
+                        padding: 2rem;
+                        padding-top: 0.5rem;
                         text-align: center;
                         h2{
                             padding-left: 0;
@@ -893,8 +913,9 @@ footer{
                     .sobreNuestroEquipo{
                         left: 0;
                         box-shadow: 5px 5px 5px -1px #000000;
+                        padding: 1.25rem;
                         p{
-                            padding: 1.5rem;
+                            padding: 0.25rem;
                         }
                     }
                 }
@@ -908,10 +929,23 @@ footer{
             .col{
                 width: 100%;
                 .container-form{
-                    padding: 1rem;
+                    padding: 2rem;
+                    padding-bottom: 3rem;
                     h2{
                         text-align: center;
                         padding-right: 0;
+                    }
+                    .formulario{
+                        border: solid 2px #000000;
+                        border-radius: 10px;
+                        box-shadow: 9px 9px 15px ;
+                        .formulario-contacto input[type="submit"]{
+                            width: 65%;
+                            border-radius: 10px;
+                            font-size: 1.6rem;
+                            padding-top: 0.4rem;
+                            padding-bottom: 0.4rem;
+                        }
                     }
                 }
             }
@@ -920,25 +954,20 @@ footer{
     .containerMensaje .container .col.der {
         top: 0;
         left: 0;
+        display: none;
     }
 
     .contacto{
         width: 100%;
-        min-height: 20rem;
-        background: @fondo-secundario;
-        padding: 0 3rem;
+        padding: 3rem;
+        margin-top: 2rem;
         text-align: center;
         justify-content: center;
         position: relative;
-        .containerMapa{
-            display: none;
-        }
         .containerContacto{
             left: 0;
             width: 100%;
             margin: 0 auto;
-            min-height: 15rem;
-            top: 2.5rem;
             position: relative; 
             text-align: center;
             justify-content: center;           
@@ -946,11 +975,12 @@ footer{
     }
 
     .clientes{
-        .containerComentario{
+        .containerComentarios{
             padding: 0.5rem;
             p{
                 font-size: 1.5rem;
-                padding: 1rem;
+                padding: 1rem 3rem;
+                padding-bottom: 1.5rem;
             }
         }
     }
