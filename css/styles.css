@@ -771,6 +771,18 @@ header .menu-bar-logo .slideMenu a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.clientes .quoteSimbol {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  background-color: #011339bd;
+  padding-top: 1rem;
+}
+.clientes .quoteSimbol h2 {
+  font-size: 4rem;
+  text-align: center;
+}
 .clientes .containerComentarios {
   position: relative;
   color: #fff;
@@ -778,11 +790,16 @@ header .menu-bar-logo .slideMenu a:hover {
   background-color: #011339bd;
   padding-top: 3rem;
   padding-bottom: 4rem;
+  width: 400%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.clientes .containerComentarios h2 {
-  font-size: 4rem;
-  text-align: center;
-  padding-bottom: 1rem;
+.clientes .containerComentarios .quoteSimbol {
+  width: 100%;
+}
+.clientes .containerComentarios .slideComentario {
+  width: 100%;
 }
 .clientes .containerComentarios p {
   font-size: 1.5rem;
@@ -817,6 +834,11 @@ footer .bottom-redes a {
 footer .bottom-redes a:hover {
   color: #fff;
 }
+@media all and (max-width: 1300px) {
+  .clientes .containerComentarios p {
+    padding: 0 6rem;
+  }
+}
 @media all and (max-width: 1047px) {
   header .menu-bar-pc {
     display: none;
@@ -830,6 +852,11 @@ footer .bottom-redes a:hover {
     position: relative;
     width: 20rem;
     text-align: center;
+  }
+}
+@media all and (max-width: 900px) {
+  .clientes .containerComentarios p {
+    padding: 0 3rem;
   }
 }
 @media all and (max-width: 750px) {

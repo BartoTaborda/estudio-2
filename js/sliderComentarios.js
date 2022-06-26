@@ -1,24 +1,20 @@
 (function () {
-
-
+    
 /* ----------- OBJETO CON LAS PROP DEL SLIDER ----------- */
 
 let propSlider = {
 
-    slider: document.getElementById('slider'),
+    slider: document.getElementById('sliderComentarios'),
     primerSlide: null,
 
 }
-
-
-
 
 /* ----------- OBJETO CON LOS METODOS DEL SLIDER ----------- */
 
 let metSlider = {
 
     inicio: function () {
-        setInterval(metSlider.moverSlide, 2500)
+        setInterval(metSlider.moverSlide, 4000)
     },
 
     moverSlide: function () {
