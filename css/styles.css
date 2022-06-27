@@ -727,7 +727,7 @@ header .menu-bar-logo .slideMenu a:hover {
           filter: grayscale(100%);
 }
 .contacto .parallax {
-  background-image: url(../img/img-mapa-prueba2.png);
+  background-image: url(../img/img-mapa-prueba3.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -833,6 +833,22 @@ footer .bottom-redes a {
 }
 footer .bottom-redes a:hover {
   color: #fff;
+}
+@media all and (max-width: 1250px) {
+  .contacto {
+    background-image: url(../img/img-mapa-prueba3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contacto .parallax {
+    background-image: none;
+    width: 100%;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4rem 0;
+  }
 }
 @media all and (max-width: 1300px) {
   .clientes .containerComentarios p {
@@ -965,7 +981,7 @@ footer .bottom-redes a:hover {
     left: 0;
     display: none;
   }
-  .contacto {
+  .contacto .parallax {
     width: 100%;
     padding: 3rem;
     margin-top: 2rem;
@@ -975,7 +991,7 @@ footer .bottom-redes a:hover {
             justify-content: center;
     position: relative;
   }
-  .contacto .containerContacto {
+  .contacto .parallax .containerContacto {
     left: 0;
     width: 100%;
     margin: 0 auto;

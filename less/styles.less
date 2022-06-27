@@ -712,7 +712,7 @@ header{
 .contacto{
     
     .parallax{
-        background-image: url(../img/img-mapa-prueba2.png);
+        background-image: url(../img/img-mapa-prueba3.png);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -835,6 +835,21 @@ footer{
 
 
 // ---------------------- MEDIA QUERIES ----------------------
+
+@media all and (max-width:1250px){
+    .contacto{
+        background-image: url(../img/img-mapa-prueba3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .parallax{
+            background-image: none;
+            width: 100%;
+            position: relative;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+    }
+}
 
 @media all and (max-width:1300px){
     .clientes{
@@ -998,19 +1013,21 @@ footer{
     }
 
     .contacto{
-        width: 100%;
-        padding: 3rem;
-        margin-top: 2rem;
-        text-align: center;
-        justify-content: center;
-        position: relative;
-        .containerContacto{
-            left: 0;
+        .parallax{
             width: 100%;
-            margin: 0 auto;
-            position: relative; 
+            padding: 3rem;
+            margin-top: 2rem;
             text-align: center;
-            justify-content: center;           
+            justify-content: center;
+            position: relative;
+            .containerContacto{
+                left: 0;
+                width: 100%;
+                margin: 0 auto;
+                position: relative; 
+                text-align: center;
+                justify-content: center;           
+            }
         }
     }
 
