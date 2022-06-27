@@ -726,16 +726,15 @@ header .menu-bar-logo .slideMenu a:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
-.contacto {
+.contacto .parallax {
+  background-image: url(../img/img-mapa-prueba2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/img-mapa-prubea.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding: 4rem 0;
 }
 .contacto .containerContacto {
@@ -770,6 +769,7 @@ header .menu-bar-logo .slideMenu a:hover {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .clientes .quoteSimbol {
   position: relative;
