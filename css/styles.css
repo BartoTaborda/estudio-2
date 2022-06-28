@@ -584,9 +584,33 @@ header .menu-bar-logo .slideMenu a:hover {
 .nuestroEquipo .container .col .slider .slide.foto3 {
   background-image: url(../img/estudio-prueba3.png);
 }
+.mensaje {
+  position: relative;
+}
+.mensaje .videoMensaje {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mensaje .capa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #1c1c1d;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+}
 .containerMensaje {
-  background: #fff;
+  background: transparent;
   padding: 1.5rem 0;
+  position: relative;
+  z-index: 2;
 }
 .containerMensaje .container {
   display: -webkit-box;
@@ -623,14 +647,15 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerMensaje .container .col .container-form h2 {
   color: #011339;
-  padding-right: 3rem;
-  padding-bottom: 1.5rem;
-  text-align: right;
+  text-shadow: 0px 10px 10px #fff, 0px -10px 10px #fff, 10px 0px 10px #fff, -10px 0px 10px #fff;
+  position: relative;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
   font-family: 'Bebas Neue', cursive;
-  text-decoration: underline;
 }
 .containerMensaje .container .col .container-form .formulario {
   position: relative;
@@ -1011,11 +1036,7 @@ footer .bottom-redes a:hover {
     text-align: center;
     padding-right: 0;
     position: relative;
-    top: -1rem;
-  }
-  .containerMensaje .container .col .container-form .formulario {
-    -webkit-box-shadow: 9px 9px 15px ;
-            box-shadow: 9px 9px 15px ;
+    padding-top: 2rem;
   }
   .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
     width: 65%;
