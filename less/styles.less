@@ -317,15 +317,19 @@ header{
 // ----------------------- PORTADA ----------------------
 
 .containerPortada{
+    position: relative;
+    text-align: center;
     .imgPortada{
         width: 100%;
         position: relative;
     }
     .containerLogoTexto{
-        background: #25d366;
         position: absolute;
         margin: 0 auto;
-        top: 5rem;
+        top: 6.5rem;
+        width: 40%;
+        left: 30%;
+        border: #fff 1px solid;
     }
     
 }
@@ -519,6 +523,7 @@ header{
                     position: relative;
                     left: -50px;
                     z-index: 1;
+                    padding: 1rem 2rem;
                     background-color: @fondo-secundario;
                 }
             }
@@ -535,7 +540,7 @@ header{
 
                     &.foto1{
                         background-image: url(../img/equipo-prueba.png);
-                        filter: grayscale(100%);
+                        filter: grayscale(0%);
                     }
                     &.foto2{
                         background-image: url(../img/estudio-prueba2.png);
@@ -592,7 +597,7 @@ header{
                 }
                 .formulario{
                     position: relative;
-                    background: @fondo-secundario;
+                    background: transparent;
                     max-width: 40.625rem;
                     margin: 0 auto;
                     padding: 2.25rem;
@@ -631,7 +636,7 @@ header{
                             }
         
                             label{
-                                color: @fondo-secundario;
+                                color: @color-portada;
                                 font-family: @fuente-principal;
                                 font-weight: 700;
         
@@ -652,16 +657,16 @@ header{
                                         font-size: 1rem;
                                         line-height: 0.75rem;
                                         font-weight: 700;
-                                        color: #ffffff;
+                                        color: @color-portada;
                                     }
                                 }
                             }
         
                             .error{
                                 position: absolute;
-                                color: rgb(169, 76, 76);
+                                color: rgb(130, 24, 24);
                                 font-family: @fuente-principal;
-                                font-weight: 700;
+                                font-weight: 900;
                                 font-size: 0.875rem;
                             }
                         }
@@ -671,21 +676,24 @@ header{
                             color: @blanco;
                             font-size: 1.25rem;
                             background: darken(@fondo-secundario, 35%);
-                            border-radius: 1px;
+                            border-radius: 10px;
                             border: 2px solid @blanco;
                             cursor: pointer;
                             display: block;
                             margin: 0 auto;
                             margin-top: 2rem;
-                            padding: 0.9375rem;
-                            width: 30%;
+                            padding: 0.5rem;
+                            width: 50%;
                             outline: none;
                             -webkit-transition: all .3s ease;
                             -o-transition: all .3s ease;
                             transition: all .3s ease;
         
                             &:hover{
-                                background: darken(@fondo-secundario, 50%);
+                                background: #fff;
+                                color: @color-portada;
+                                border: @color-portada 2px solid;
+                                font-weight: 900;
                             }
                         }
                     }
@@ -884,6 +892,21 @@ footer{
             }
         }
     }
+    .nuestroEquipo .container .col .titulo-seccion p{
+        text-align: center;
+        &:first-child{
+            padding-bottom: 0;
+        }
+        &:last-child{
+            padding-top: 0;
+        }
+    }
+    .containerPortada .containerLogoTexto{
+        top: 5rem;
+    }
+    header .menu-bar-logo .slideMenu.active{
+        width: 50%;
+    }
 }
 
 @media all and (max-width:900px){
@@ -893,6 +916,10 @@ footer{
                 padding: 0 3rem;
             }
         } 
+    }
+    .nuestroEquipo .container .col .titulo-seccion p{
+        padding-left: 4rem;
+        padding-right: 0;
     }
 }
 
@@ -904,8 +931,8 @@ footer{
         }
     }
     .nuestroEstudio{
-        padding: 0rem 1rem;
-        padding-bottom: 1rem;
+        padding: 2rem 1.5rem;
+        padding-bottom: 1.5rem;
 
         .container .col{
             width: 100%;
@@ -918,9 +945,6 @@ footer{
         .container .col.izq{
             order: 2;
         }
-    }
-    .nuestroEquipo .container .col.izq{
-        z-index: 0;
     }
 
     .main .portada .col{
@@ -941,6 +965,7 @@ footer{
     }
 
     .servicios{
+        margin-bottom: 3.5rem;
         .tituloServicios{
             padding-top: 2rem;
         }
@@ -952,6 +977,10 @@ footer{
         }
     }
 
+    .nuestroEquipo .container .col.izq{
+        z-index: 0;
+        top: 4rem;
+    }
     .nosotros{
         .nuestroEquipo{
             padding-top: 0;
@@ -972,9 +1001,11 @@ footer{
                         padding: 2rem;
                         padding-top: 0.5rem;
                         text-align: center;
+                        padding-bottom: 0;
                         h2{
+                            position: relative;
+                            top: -24rem;
                             padding-left: 0;
-                            width: 50%;
                             margin: 0 auto;
                             margin-bottom: 1.5rem;
                             background: rgba(255, 255, 255, 0.732);
@@ -984,7 +1015,10 @@ footer{
                         left: 0;
                         box-shadow: 5px 5px 5px -1px #000000;
                         padding: 1.25rem;
+                        top: -2rem;
+                        background-color: hsla(217, 50%, 53%, 0.834);
                         p{
+                            background-color: transparent;
                             padding: 0.25rem;
                         }
                     }
@@ -999,15 +1033,15 @@ footer{
             .col{
                 width: 100%;
                 .container-form{
-                    padding: 2rem;
-                    padding-bottom: 3rem;
+                    padding: 0 3rem;
+                    padding-bottom: 2rem;
                     h2{
                         text-align: center;
                         padding-right: 0;
+                        position: relative;
+                        top: -1rem;
                     }
                     .formulario{
-                        border: solid 2px #000000;
-                        border-radius: 10px;
                         box-shadow: 9px 9px 15px ;
                         .formulario-contacto input[type="submit"]{
                             width: 65%;
@@ -1057,5 +1091,29 @@ footer{
             }
         }
     }
+    .containerPortada .containerLogoTexto{
+        top: 2.5rem;
+    }
 }
 
+@media all and (max-width:600px){
+    header .menu-bar-logo .slideMenu.active{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:500px){
+    .containerLogoTexto{
+        display: none;
+    }
+    header .menu-bar-logo .slideMenu.active{
+        width: 70%;
+    }
+}
+
+@media all and (max-width:350px){
+    header .menu-bar-logo .slideMenu.active{
+        width: 100%;
+        border-bottom: 1px solid #777;
+    }
+}

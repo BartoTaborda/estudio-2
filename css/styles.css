@@ -350,15 +350,21 @@ header .menu-bar-logo .slideMenu a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.containerPortada {
+  position: relative;
+  text-align: center;
+}
 .containerPortada .imgPortada {
   width: 100%;
   position: relative;
 }
 .containerPortada .containerLogoTexto {
-  background: #25d366;
   position: absolute;
   margin: 0 auto;
-  top: 5rem;
+  top: 6.5rem;
+  width: 40%;
+  left: 30%;
+  border: #fff 1px solid;
 }
 .nuestroEstudio {
   background: #fff;
@@ -552,6 +558,7 @@ header .menu-bar-logo .slideMenu a:hover {
   position: relative;
   left: -50px;
   z-index: 1;
+  padding: 1rem 2rem;
   background-color: #4d7ac3;
 }
 .nuestroEquipo .container .col .slider {
@@ -568,8 +575,8 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .nuestroEquipo .container .col .slider .slide.foto1 {
   background-image: url(../img/equipo-prueba.png);
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 .nuestroEquipo .container .col .slider .slide.foto2 {
   background-image: url(../img/estudio-prueba2.png);
@@ -627,7 +634,7 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerMensaje .container .col .container-form .formulario {
   position: relative;
-  background: #4d7ac3;
+  background: transparent;
   max-width: 40.625rem;
   margin: 0 auto;
   padding: 2.25rem;
@@ -664,7 +671,7 @@ header .menu-bar-logo .slideMenu a:hover {
   min-width: 100%;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group label {
-  color: #4d7ac3;
+  color: #072440;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
@@ -684,13 +691,13 @@ header .menu-bar-logo .slideMenu a:hover {
   font-size: 1rem;
   line-height: 0.75rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #072440;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group .error {
   position: absolute;
-  color: #a94c4c;
+  color: #821818;
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 0.875rem;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
@@ -698,20 +705,23 @@ header .menu-bar-logo .slideMenu a:hover {
   color: #fff;
   font-size: 1.25rem;
   background: #182946;
-  border-radius: 1px;
+  border-radius: 10px;
   border: 2px solid #fff;
   cursor: pointer;
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
-  padding: 0.9375rem;
-  width: 30%;
+  padding: 0.5rem;
+  width: 50%;
   outline: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"]:hover {
-  background: #04080d;
+  background: #fff;
+  color: #072440;
+  border: #072440 2px solid;
+  font-weight: 900;
 }
 .containerMensaje .container .col .slider {
   width: 100%;
@@ -876,10 +886,29 @@ footer .bottom-redes a:hover {
     width: 20rem;
     text-align: center;
   }
+  .nuestroEquipo .container .col .titulo-seccion p {
+    text-align: center;
+  }
+  .nuestroEquipo .container .col .titulo-seccion p:first-child {
+    padding-bottom: 0;
+  }
+  .nuestroEquipo .container .col .titulo-seccion p:last-child {
+    padding-top: 0;
+  }
+  .containerPortada .containerLogoTexto {
+    top: 5rem;
+  }
+  header .menu-bar-logo .slideMenu.active {
+    width: 50%;
+  }
 }
 @media all and (max-width: 900px) {
   .clientes .containerComentarios p {
     padding: 0 3rem;
+  }
+  .nuestroEquipo .container .col .titulo-seccion p {
+    padding-left: 4rem;
+    padding-right: 0;
   }
 }
 @media all and (max-width: 750px) {
@@ -887,8 +916,8 @@ footer .bottom-redes a:hover {
     top: 2.5rem;
   }
   .nuestroEstudio {
-    padding: 0rem 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .nuestroEstudio .container .col {
     width: 100%;
@@ -902,9 +931,6 @@ footer .bottom-redes a:hover {
         -ms-flex-order: 2;
             order: 2;
   }
-  .nuestroEquipo .container .col.izq {
-    z-index: 0;
-  }
   .main .portada .col {
     width: 100%;
   }
@@ -917,12 +943,19 @@ footer .bottom-redes a:hover {
   .nuestroEstudio .container .col .titulo-seccion p {
     text-align: center;
   }
+  .servicios {
+    margin-bottom: 3.5rem;
+  }
   .servicios .tituloServicios {
     padding-top: 2rem;
   }
   .servicios .fueros .fuero {
     min-width: 50%;
     max-width: 50%;
+  }
+  .nuestroEquipo .container .col.izq {
+    z-index: 0;
+    top: 4rem;
   }
   .nosotros .nuestroEquipo {
     padding-top: 0;
@@ -942,10 +975,12 @@ footer .bottom-redes a:hover {
     padding: 2rem;
     padding-top: 0.5rem;
     text-align: center;
+    padding-bottom: 0;
   }
   .nosotros .nuestroEquipo .container .col .titulo-seccion h2 {
+    position: relative;
+    top: -24rem;
     padding-left: 0;
-    width: 50%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
     background: rgba(255, 255, 255, 0.732);
@@ -955,8 +990,11 @@ footer .bottom-redes a:hover {
     -webkit-box-shadow: 5px 5px 5px -1px #000000;
             box-shadow: 5px 5px 5px -1px #000000;
     padding: 1.25rem;
+    top: -2rem;
+    background-color: hsla(217, 50%, 53%, 0.834);
   }
   .nosotros .nuestroEquipo .container .col .sobreNuestroEquipo p {
+    background-color: transparent;
     padding: 0.25rem;
   }
   .containerMensaje {
@@ -966,16 +1004,16 @@ footer .bottom-redes a:hover {
     width: 100%;
   }
   .containerMensaje .container .col .container-form {
-    padding: 2rem;
-    padding-bottom: 3rem;
+    padding: 0 3rem;
+    padding-bottom: 2rem;
   }
   .containerMensaje .container .col .container-form h2 {
     text-align: center;
     padding-right: 0;
+    position: relative;
+    top: -1rem;
   }
   .containerMensaje .container .col .container-form .formulario {
-    border: solid 2px #000000;
-    border-radius: 10px;
     -webkit-box-shadow: 9px 9px 15px ;
             box-shadow: 9px 9px 15px ;
   }
@@ -1018,5 +1056,27 @@ footer .bottom-redes a:hover {
     font-size: 1.5rem;
     padding: 1rem 3rem;
     padding-bottom: 1.5rem;
+  }
+  .containerPortada .containerLogoTexto {
+    top: 2.5rem;
+  }
+}
+@media all and (max-width: 600px) {
+  header .menu-bar-logo .slideMenu.active {
+    width: 60%;
+  }
+}
+@media all and (max-width: 500px) {
+  .containerLogoTexto {
+    display: none;
+  }
+  header .menu-bar-logo .slideMenu.active {
+    width: 70%;
+  }
+}
+@media all and (max-width: 350px) {
+  header .menu-bar-logo .slideMenu.active {
+    width: 100%;
+    border-bottom: 1px solid #777;
   }
 }
