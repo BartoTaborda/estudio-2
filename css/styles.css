@@ -239,12 +239,12 @@ header .menu-bar-pc {
 header .menu-bar-pc .logo {
   position: relative;
   width: 20rem;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
 }
 header .menu-bar-pc .logo .logo-menu-bar-pc {
   color: #fff;
   font-family: 'Tangerine', cursive;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-shadow: 5px 5px 5px black;
@@ -352,6 +352,13 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerPortada .imgPortada {
   width: 100%;
+  position: relative;
+}
+.containerPortada .containerLogoTexto {
+  background: #25d366;
+  position: absolute;
+  margin: 0 auto;
+  top: 5rem;
 }
 .nuestroEstudio {
   background: #fff;
@@ -398,6 +405,7 @@ header .menu-bar-logo .slideMenu a:hover {
   padding-bottom: 1.125rem;
   font-size: 1.125rem;
   line-height: 1.75;
+  text-align: center;
 }
 .nuestroEstudio .container .col .titulo-seccion p:last-child {
   padding-bottom: 0;
@@ -439,11 +447,9 @@ header .menu-bar-logo .slideMenu a:hover {
   font-size: 3rem;
   font-weight: 700;
   font-family: 'Bebas Neue', cursive;
-  text-decoration: underline;
 }
 .servicios .tituloServicios p {
   color: #000000;
-  padding-bottom: 1.125rem;
   font-size: 1.5rem;
   line-height: 1.75;
 }
@@ -742,8 +748,6 @@ header .menu-bar-logo .slideMenu a:hover {
   position: relative;
   margin: 0 auto;
   background: #ffffff;
-  border: #777 2px solid;
-  border-radius: 15px;
   -webkit-box-shadow: 7px 7px 15px -1px #000000;
           box-shadow: 7px 7px 15px -1px #000000;
   padding: 1.5rem;
@@ -761,6 +765,9 @@ header .menu-bar-logo .slideMenu a:hover {
   font-size: 1.2rem;
   font-weight: 500;
   padding-bottom: 0.75rem;
+}
+.contacto .containerContacto li i {
+  padding-right: 0.75rem;
 }
 .clientes {
   width: 100%;
@@ -876,11 +883,11 @@ footer .bottom-redes a:hover {
   }
 }
 @media all and (max-width: 750px) {
-  .containerPortada {
-    display: none;
+  .portada .containerPortada {
+    top: 2.5rem;
   }
   .nuestroEstudio {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
     padding-bottom: 1rem;
   }
   .nuestroEstudio .container .col {
@@ -888,11 +895,15 @@ footer .bottom-redes a:hover {
   }
   .nuestroEstudio .container .col .titulo-seccion {
     padding: 2rem;
+    padding-top: 1rem;
   }
   .nuestroEstudio .container .col.izq {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .nuestroEquipo .container .col.izq {
+    z-index: 0;
   }
   .main .portada .col {
     width: 100%;
@@ -904,7 +915,7 @@ footer .bottom-redes a:hover {
     text-align: justify;
   }
   .nuestroEstudio .container .col .titulo-seccion p {
-    text-align: justify;
+    text-align: center;
   }
   .servicios .tituloServicios {
     padding-top: 2rem;
@@ -918,11 +929,6 @@ footer .bottom-redes a:hover {
     padding-bottom: 0;
     margin-top: 1rem;
   }
-  .nosotros .nuestroEquipo .container .col.izq {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .nosotros .nuestroEquipo .container .col {
     width: 100%;
     max-width: 100%;
@@ -932,13 +938,17 @@ footer .bottom-redes a:hover {
   }
   .nosotros .nuestroEquipo .container .col .titulo-seccion {
     left: 0;
-    top: 0;
+    top: -2.75rem;
     padding: 2rem;
     padding-top: 0.5rem;
     text-align: center;
   }
   .nosotros .nuestroEquipo .container .col .titulo-seccion h2 {
     padding-left: 0;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.732);
   }
   .nosotros .nuestroEquipo .container .col .sobreNuestroEquipo {
     left: 0;
@@ -968,6 +978,7 @@ footer .bottom-redes a:hover {
     border-radius: 10px;
     -webkit-box-shadow: 9px 9px 15px ;
             box-shadow: 9px 9px 15px ;
+    background: transparent;
   }
   .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
     width: 65%;

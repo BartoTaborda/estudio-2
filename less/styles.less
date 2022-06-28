@@ -188,11 +188,11 @@ header{
         .logo{
             position: relative;
             width: 20rem;
-            padding: 0.75rem 0;
+            padding: 1rem 0;
             .logo-menu-bar-pc{
                 color: #fff;
                 font-family: @fuente-logo;
-                font-size: 3.2rem;
+                font-size: 2.5rem;
                 -webkit-transition: all .3s ease;
                 -o-transition: all .3s ease;
                 transition: all .3s ease;
@@ -319,7 +319,15 @@ header{
 .containerPortada{
     .imgPortada{
         width: 100%;
+        position: relative;
     }
+    .containerLogoTexto{
+        background: #25d366;
+        position: absolute;
+        margin: 0 auto;
+        top: 5rem;
+    }
+    
 }
 .nuestroEstudio{
     background: @blanco;
@@ -358,6 +366,7 @@ header{
                     padding-bottom: 1.125rem;
                     font-size: 1.125rem;
                     line-height: 1.75;
+                    text-align: center;
 
                     &:last-child{
                         padding-bottom: 0;
@@ -407,11 +416,9 @@ header{
             font-size: 3rem;
             font-weight: 700;
             font-family: @fuente-secundaria;
-            text-decoration: underline;
         }
         p{
             color: #000000;
-            padding-bottom: 1.125rem;
             font-size: 1.5rem;
             line-height: 1.75;
 
@@ -419,6 +426,7 @@ header{
                 padding-bottom: 0;
             }
         }
+    
     }
 
     .fueros{
@@ -727,8 +735,6 @@ header{
         position: relative;
         margin: 0 auto;
         background: rgb(255, 255, 255);
-        border: #777 2px solid;
-        border-radius: 15px;
         box-shadow: 7px 7px 15px -1px #000000;
         padding: 1.5rem;
 
@@ -745,6 +751,9 @@ header{
             font-size: 1.2rem;
             font-weight: 500;
             padding-bottom: 0.75rem;
+            i{
+                padding-right: 0.75rem;
+            }
         }
         
     }
@@ -888,11 +897,14 @@ footer{
 }
 
 @media all and (max-width:750px){
-    .containerPortada{
-        display: none;
+    .portada{
+        .containerPortada{
+            //display: none;
+            top: 2.5rem;
+        }
     }
     .nuestroEstudio{
-        padding: 3rem 1rem;
+        padding: 0rem 1rem;
         padding-bottom: 1rem;
 
         .container .col{
@@ -900,12 +912,15 @@ footer{
 
             .titulo-seccion{
                 padding: 2rem;
+                padding-top: 1rem;
             }
         }
         .container .col.izq{
             order: 2;
-
         }
+    }
+    .nuestroEquipo .container .col.izq{
+        z-index: 0;
     }
 
     .main .portada .col{
@@ -922,7 +937,7 @@ footer{
     }
 
     .nuestroEstudio .container .col .titulo-seccion p{
-        text-align: justify;
+        text-align: center;
     }
 
     .servicios{
@@ -944,10 +959,6 @@ footer{
             margin-top: 1rem;
             .container{
 
-                .col.izq{
-                    order: 2;
-                }
-
                 .col{
                     width: 100%;
                     max-width: 100%;
@@ -957,12 +968,16 @@ footer{
 
                     .titulo-seccion{
                         left: 0;
-                        top: 0;
+                        top: -2.75rem;
                         padding: 2rem;
                         padding-top: 0.5rem;
                         text-align: center;
                         h2{
                             padding-left: 0;
+                            width: 50%;
+                            margin: 0 auto;
+                            margin-bottom: 1.5rem;
+                            background: rgba(255, 255, 255, 0.732);
                         }
                     }
                     .sobreNuestroEquipo{
@@ -994,6 +1009,7 @@ footer{
                         border: solid 2px #000000;
                         border-radius: 10px;
                         box-shadow: 9px 9px 15px ;
+                        background: transparent;
                         .formulario-contacto input[type="submit"]{
                             width: 65%;
                             border-radius: 10px;
@@ -1020,6 +1036,7 @@ footer{
             text-align: center;
             justify-content: center;
             position: relative;
+
             .containerContacto{
                 left: 0;
                 width: 100%;
