@@ -978,7 +978,6 @@ footer .bottom-redes a:hover {
     border-radius: 10px;
     -webkit-box-shadow: 9px 9px 15px ;
             box-shadow: 9px 9px 15px ;
-    background: transparent;
   }
   .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
     width: 65%;
