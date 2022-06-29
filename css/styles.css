@@ -808,6 +808,10 @@ header .menu-bar-logo .slideMenu a:hover {
 .contacto .containerContacto li i {
   padding-right: 0.75rem;
 }
+.contacto .containerContacto li a:hover {
+  color: #454C75;
+  text-decoration: underline;
+}
 .clientes {
   width: 100%;
   position: relative;
