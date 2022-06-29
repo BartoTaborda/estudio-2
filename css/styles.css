@@ -1092,6 +1092,9 @@ footer .bottom-redes a:hover {
   header .menu-bar-logo .slideMenu.active {
     width: 60%;
   }
+  .nuestroEstudio .container .col .titulo-seccion {
+    padding: 1rem;
+  }
 }
 @media all and (max-width: 500px) {
   .containerLogoTexto {
