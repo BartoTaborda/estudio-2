@@ -938,6 +938,9 @@ footer .bottom-redes a:hover {
     padding-left: 4rem;
     padding-right: 0;
   }
+  .containerMensaje .container .col .container-form h2 {
+    padding: 0;
+  }
 }
 @media all and (max-width: 750px) {
   .portada .containerPortada {
@@ -1019,7 +1022,7 @@ footer .bottom-redes a:hover {
             box-shadow: 5px 5px 5px -1px #000000;
     padding: 1.25rem;
     top: -2rem;
-    background-color: #7187b7d9;
+    background-color: #7087b7c2;
   }
   .nosotros .nuestroEquipo .container .col .sobreNuestroEquipo p {
     background-color: transparent;
