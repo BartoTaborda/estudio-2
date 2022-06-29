@@ -454,7 +454,7 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .servicios .tituloServicios p {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 .servicios .tituloServicios p:last-child {
@@ -830,8 +830,8 @@ header .menu-bar-logo .slideMenu a:hover {
   color: #fff;
   font-weight: 900;
   background-color: #011339bd;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
   width: 400%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,14 +844,14 @@ header .menu-bar-logo .slideMenu a:hover {
   width: 100%;
 }
 .clientes .containerComentarios p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   padding: 0 10rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 footer {
-  background: #7086B7;
+  background: #AAC6E5;
   padding: 1rem 0;
   text-align: center;
   font-weight: 700;
@@ -864,14 +864,14 @@ footer .bottom-redes {
   margin-top: 1rem;
 }
 footer .bottom-redes a {
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   margin: 0 0.5rem;
   font-weight: 700;
   color: #7086B7;
   background-color: #011339;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 footer .bottom-redes a:hover {
   color: #fff;
@@ -1037,6 +1037,9 @@ footer .bottom-redes a:hover {
     position: relative;
     padding-top: 2rem;
   }
+  .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group label.label {
+    font-size: 1rem;
+  }
   .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
     width: 65%;
     border-radius: 10px;
@@ -1068,12 +1071,16 @@ footer .bottom-redes a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 1.5rem 1rem;
+  }
+  .clientes .quoteSimbol h2 {
+    font-size: 3rem;
   }
   .clientes .containerComentarios {
     padding: 0.5rem;
   }
   .clientes .containerComentarios p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem 3rem;
     padding-bottom: 1.5rem;
   }

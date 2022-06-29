@@ -422,7 +422,7 @@ header{
         }
         p{
             color: #000000;
-            font-size: 1.5rem;
+            font-size: 1rem;
             line-height: 1.75;
 
             &:last-child{
@@ -819,8 +819,8 @@ header{
         color: #fff;
         font-weight: 900;
         background-color: #011339bd;
-        padding-top: 3rem;
-        padding-bottom: 4rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
         width: 400%;
         display: flex;
 
@@ -832,7 +832,7 @@ header{
         }
         
         p{
-            font-size: 1.5rem;
+            font-size: 1rem;
             text-align: center;
             padding: 0 10rem;
             font-family: Arial, Helvetica, sans-serif;
@@ -846,7 +846,7 @@ header{
 // ---------------------- PIE DE PAGINA ----------------------
 
 footer{
-    background: @fondo-secundario;
+    background: @fondo-terciario;
     padding: 1rem 0;
     text-align: center;
     font-weight: 700;
@@ -857,7 +857,7 @@ footer{
         margin-top: 1rem;
 
         a{
-            padding: 0.5rem;
+            padding: 0.25rem 0.5rem;
             margin: 0 0.5rem;
             font-weight: 700;
             color: @fondo-secundario;
@@ -865,7 +865,7 @@ footer{
             -webkit-transition: all .3s ease;
             -o-transition: all .3s ease;
             transition: all .3s ease;
-            border-radius: 5px;
+            border-radius: 15px;
 
             &:hover{
                 color: #fff;
@@ -1065,6 +1065,9 @@ footer{
                         padding-top: 2rem;
                     }
                     .formulario{
+                        .formulario-contacto .input-group label.label{
+                            font-size: 1rem;
+                        }
                         .formulario-contacto input[type="submit"]{
                             width: 65%;
                             border-radius: 10px;
@@ -1099,16 +1102,23 @@ footer{
                 margin: 0 auto;
                 position: relative; 
                 text-align: center;
-                justify-content: center;           
+                justify-content: center;   
+                padding: 1.5rem 1rem;        
             }
         }
     }
 
     .clientes{
+        .quoteSimbol{
+            h2{
+                font-size: 3rem;
+            }
+        }
         .containerComentarios{
             padding: 0.5rem;
+            
             p{
-                font-size: 1.5rem;
+                font-size: 1rem;
                 padding: 1rem 3rem;
                 padding-bottom: 1.5rem;
             }
