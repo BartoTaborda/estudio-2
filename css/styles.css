@@ -354,6 +354,9 @@ header .menu-bar-logo .slideMenu a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+.portada {
+  overflow: hidden;
+}
 .containerPortada {
   position: relative;
   text-align: center;
@@ -442,6 +445,7 @@ header .menu-bar-logo .slideMenu a:hover {
 .servicios {
   width: 100%;
   background-color: #AAC6E5;
+  overflow: hidden;
 }
 .servicios .tituloServicios {
   padding-top: 3.125rem;
@@ -588,6 +592,7 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .mensaje {
   position: relative;
+  overflow: hidden;
 }
 .mensaje .videoMensaje {
   width: 100%;
