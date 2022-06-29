@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Estudio Broitman Lex</title>
     <script src="https://kit.fontawesome.com/ab04a0b8aa.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
@@ -164,7 +165,8 @@
                 <div class="container-form" data-aos="fade-left" data-aos-duration="1500">
                     <h2>Mensaje</h2>
                     <div class="formulario">
-                        <form action="" class="formulario-contacto" name="formulario-contacto" id="formulario_contacto">
+                        <form action="https://formspree.io/f/xknyaekl"
+                        method="POST" class="formulario-contacto" name="formulario-contacto" id="formulario_contacto">
                             <div>
                                 <div class="input-group">
                                     <input type="text" id="nombre" name="nombre">
@@ -264,11 +266,34 @@
 <script src="js/sliderComentarios.js"></script>
 <script src="js/parallax.js"></script>
 
+<!--  animaciones scroll  -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 
+<!--  envío del formulario con formspree  -->
+<script>
+    const $form = document.querySelector('#formulario_contacto')
+    $form.addEventListener('submit', handleSubmit)
+    
+    async function handleSubmit (event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+            method:this.method,
+            body:form,
+            headers: {
+                'Accept': 'aplication/json'
+            }
+        })
+        if (response.ok){
+            this.reset()
+            swal("Enviado!", "Gracias por contactarnos, te responderemos a la brevedad.", "success");
+            // alert('Gracias por contactarnos, te responderemos a la brevedad.');
+        }
+    }
+</script>
 
 </body>
 </html>
