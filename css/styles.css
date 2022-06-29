@@ -220,7 +220,7 @@ h2::selection {
   margin-left: 2px;
 }
 header .menu-bar-pc {
-  background: #072440;
+  background: #454C75;
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -244,10 +244,10 @@ header .menu-bar-pc .logo {
 header .menu-bar-pc .logo .logo-menu-bar-pc {
   color: #fff;
   font-family: 'Tangerine', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 7px black;
 }
 header .menu-bar-pc .logo .logo-menu-bar-pc:hover {
   -webkit-transform: scale(1.05);
@@ -271,7 +271,7 @@ header .menu-bar-pc .menu-principal a:hover {
   text-shadow: 0px 0px 10px #fff;
 }
 header .menu-bar-logo {
-  background: #072440;
+  background: #454C75;
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -297,10 +297,10 @@ header .menu-bar-logo .logo .logo-menu-bar {
   text-align: left;
   color: #fff;
   font-family: 'Tangerine', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 7px black;
 }
 header .menu-bar-logo .logo .logo-menu-bar:hover {
   -webkit-transform: scale(1.05);
@@ -346,7 +346,7 @@ header .menu-bar-logo .slideMenu .menu-principal a {
   text-transform: uppercase;
 }
 header .menu-bar-logo .slideMenu a:hover {
-  color: #4d7ac3;
+  color: #7086B7;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -362,9 +362,8 @@ header .menu-bar-logo .slideMenu a:hover {
   position: absolute;
   margin: 0 auto;
   top: 6.5rem;
-  width: 40%;
-  left: 30%;
-  border: #fff 1px solid;
+  width: 30%;
+  left: 35%;
 }
 .nuestroEstudio {
   background: #fff;
@@ -393,8 +392,7 @@ header .menu-bar-logo .slideMenu a:hover {
   overflow: hidden;
 }
 .nuestroEstudio .container .col .titulo-seccion {
-  padding: 3.125rem;
-  padding-right: 0px;
+  padding: 2rem;
   font-weight: lighter;
 }
 .nuestroEstudio .container .col .titulo-seccion h2 {
@@ -439,7 +437,7 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .servicios {
   width: 100%;
-  background-color: #4d7ac3;
+  background-color: #AAC6E5;
 }
 .servicios .tituloServicios {
   padding-top: 3.125rem;
@@ -552,14 +550,14 @@ header .menu-bar-logo .slideMenu a:hover {
   font-size: 1.125rem;
   line-height: 1.75;
   font-weight: 500;
-  background-color: #4d7ac3;
+  background-color: #7086B7;
 }
 .nuestroEquipo .container .col .titulo-seccion .sobreNuestroEquipo {
   position: relative;
   left: -50px;
   z-index: 1;
   padding: 1rem 2rem;
-  background-color: #4d7ac3;
+  background-color: #7086B7;
 }
 .nuestroEquipo .container .col .slider {
   width: 300%;
@@ -694,7 +692,7 @@ header .menu-bar-logo .slideMenu a:hover {
   min-width: 100%;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group label {
-  color: #072440;
+  color: #454C75;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
@@ -714,7 +712,7 @@ header .menu-bar-logo .slideMenu a:hover {
   font-size: 1rem;
   line-height: 0.75rem;
   font-weight: 700;
-  color: #072440;
+  color: #454C75;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group .error {
   position: absolute;
@@ -743,8 +741,8 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"]:hover {
   background: #fff;
-  color: #072440;
-  border: #072440 2px solid;
+  color: #454C75;
+  border: #454C75 2px solid;
   font-weight: 900;
 }
 .containerMensaje .container .col .slider {
@@ -853,7 +851,7 @@ header .menu-bar-logo .slideMenu a:hover {
   font-weight: lighter;
 }
 footer {
-  background: #4d7ac3;
+  background: #7086B7;
   padding: 1rem 0;
   text-align: center;
   font-weight: 700;
@@ -869,7 +867,7 @@ footer .bottom-redes a {
   padding: 0.5rem;
   margin: 0 0.5rem;
   font-weight: 700;
-  color: #4d7ac3;
+  color: #7086B7;
   background-color: #011339;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
