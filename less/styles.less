@@ -75,8 +75,8 @@ input, select, textarea {
 @fondo-secundario: #7086B7;
 @fondo-terciario: #AAC6E5;
 @blanco: #fff;
-@texto-oscuro: #011339;
-@texto-claro: rgb(105, 194, 246);
+@texto-oscuro: #454C75;
+@texto-claro: #AAC6E5;
 @gris-claro: #eaeaea;
 
 //FUENTES
@@ -284,6 +284,7 @@ header{
 
             &.active{
                 left: 0;
+                box-shadow: 0px 0px 20px @color-portada;
             }
 
             .top-redes{
@@ -292,6 +293,7 @@ header{
 
                 a{
                     padding: 0 1rem;
+                    color: @color-portada;
                 }
             }
 
@@ -301,6 +303,7 @@ header{
                     padding: 0.625rem 0;
                     border-top: 1.5px solid @gris-claro;
                     text-transform: uppercase;
+                    color: @color-portada;
                 }
             }
 
@@ -1040,7 +1043,7 @@ footer{
                         box-shadow: 5px 5px 5px -1px #000000;
                         padding: 1.25rem;
                         top: -2rem;
-                        background-color: hsla(217, 50%, 53%, 0.834);
+                        background-color: #7187b7d9;
                         p{
                             background-color: transparent;
                             padding: 0.25rem;
@@ -1148,6 +1151,11 @@ footer{
                     background-position: center;
                 }
             } 
+        }
+    }
+    .footer{
+        p{
+            font-size: 0.7rem;
         }
     }
 }

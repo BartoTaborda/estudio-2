@@ -153,7 +153,7 @@ textarea {
 body {
   font-size: 16px;
   font-family: 'Playfair Display', serif;
-  color: #011339;
+  color: #454C75;
 }
 .container {
   margin: 0 auto;
@@ -164,7 +164,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: #011339;
+  color: #454C75;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -331,6 +331,8 @@ header .menu-bar-logo .slideMenu {
 }
 header .menu-bar-logo .slideMenu.active {
   left: 0;
+  -webkit-box-shadow: 0px 0px 20px #454C75;
+          box-shadow: 0px 0px 20px #454C75;
 }
 header .menu-bar-logo .slideMenu .top-redes {
   margin-bottom: 0.625rem;
@@ -338,12 +340,14 @@ header .menu-bar-logo .slideMenu .top-redes {
 }
 header .menu-bar-logo .slideMenu .top-redes a {
   padding: 0 1rem;
+  color: #454C75;
 }
 header .menu-bar-logo .slideMenu .menu-principal a {
   display: block;
   padding: 0.625rem 0;
   border-top: 1.5px solid #eaeaea;
   text-transform: uppercase;
+  color: #454C75;
 }
 header .menu-bar-logo .slideMenu a:hover {
   color: #7086B7;
@@ -396,7 +400,7 @@ header .menu-bar-logo .slideMenu a:hover {
   font-weight: lighter;
 }
 .nuestroEstudio .container .col .titulo-seccion h2 {
-  color: #011339;
+  color: #454C75;
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
@@ -446,7 +450,7 @@ header .menu-bar-logo .slideMenu a:hover {
   text-align: center;
 }
 .servicios .tituloServicios h2 {
-  color: #011339;
+  color: #454C75;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
@@ -533,7 +537,7 @@ header .menu-bar-logo .slideMenu a:hover {
   top: 2rem;
 }
 .nuestroEquipo .container .col .titulo-seccion h2 {
-  color: #011339;
+  color: #454C75;
   padding-left: 2rem;
   text-transform: uppercase;
   font-size: 3rem;
@@ -643,7 +647,7 @@ header .menu-bar-logo .slideMenu a:hover {
   position: relative;
 }
 .containerMensaje .container .col .container-form h2 {
-  color: #011339;
+  color: #454C75;
   text-shadow: 0px 10px 10px #fff, 0px -10px 10px #fff, 10px 0px 10px #fff, -10px 0px 10px #fff;
   position: relative;
   margin: 0 auto;
@@ -671,7 +675,7 @@ header .menu-bar-logo .slideMenu a:hover {
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group textarea {
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
-  color: #011339;
+  color: #454C75;
   width: 100%;
   outline: none;
   padding: 0.9375rem 0;
@@ -1015,7 +1019,7 @@ footer .bottom-redes a:hover {
             box-shadow: 5px 5px 5px -1px #000000;
     padding: 1.25rem;
     top: -2rem;
-    background-color: hsla(217, 50%, 53%, 0.834);
+    background-color: #7187b7d9;
   }
   .nosotros .nuestroEquipo .container .col .sobreNuestroEquipo p {
     background-color: transparent;
@@ -1100,6 +1104,9 @@ footer .bottom-redes a:hover {
   .mensaje .containerMensaje .container .col {
     background: url(../img/mensajes.png);
     background-position: center;
+  }
+  .footer p {
+    font-size: 0.7rem;
   }
 }
 @media all and (max-width: 500px) {
