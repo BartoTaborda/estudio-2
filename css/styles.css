@@ -608,7 +608,7 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerMensaje {
   background: transparent;
-  padding: 1.5rem 0;
+  padding: 0;
   position: relative;
   z-index: 2;
 }
@@ -628,7 +628,7 @@ header .menu-bar-logo .slideMenu a:hover {
   width: 100%;
 }
 .containerMensaje .container .col {
-  width: 50%;
+  width: 100%;
 }
 .containerMensaje .container .col.der {
   -webkit-box-shadow: 9px 9px 15px -1px rgba(0, 0, 0, 0.5);
@@ -641,7 +641,6 @@ header .menu-bar-logo .slideMenu a:hover {
 }
 .containerMensaje .container .col .container-form {
   padding: 3.125rem;
-  padding-right: 0px;
   font-weight: lighter;
   position: relative;
 }
@@ -662,8 +661,7 @@ header .menu-bar-logo .slideMenu a:hover {
   background: transparent;
   max-width: 40.625rem;
   margin: 0 auto;
-  padding: 2.25rem;
-  padding-right: 3rem;
+  padding: 2rem;
   width: 100%;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto .input-group {
@@ -724,20 +722,21 @@ header .menu-bar-logo .slideMenu a:hover {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 0.875rem;
+  text-shadow: 0px 10px 10px #fff, 0px -10px 10px #fff, 10px 0px 10px #fff, -10px 0px 10px #fff;
 }
 .containerMensaje .container .col .container-form .formulario .formulario-contacto input[type="submit"] {
   font-family: 'Bebas Neue', cursive;
   color: #fff;
-  font-size: 1.25rem;
-  background: #182946;
+  font-size: 1.5rem;
+  background: transparent;
   border-radius: 10px;
   border: 2px solid #fff;
   cursor: pointer;
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
-  padding: 0.5rem;
-  width: 50%;
+  padding: 0.25rem;
+  width: 30%;
   outline: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -766,6 +765,9 @@ header .menu-bar-logo .slideMenu a:hover {
   background-size: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+.contacto {
+  margin-top: 2rem;
 }
 .contacto .parallax {
   background-image: url(../img/img-mapa-prueba3.png);
@@ -1030,7 +1032,6 @@ footer .bottom-redes a:hover {
   }
   .containerMensaje .container .col .container-form {
     padding: 0 2rem;
-    padding-bottom: 2rem;
   }
   .containerMensaje .container .col .container-form h2 {
     text-align: center;
